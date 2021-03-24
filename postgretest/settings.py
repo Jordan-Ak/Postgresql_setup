@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'postgretest.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbtest',
-        'USER': 'postgres',
-        'PASSWORD': 'postgresql123',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', #Remember to install psycopg2 (pip install psycopg2)
+        'NAME': 'dbtest', #This name has to be the exact name as the database you setup in pgadmin 4
+        'USER': 'postgres',#Default username for postgresql after install postgresql
+        'PASSWORD': 'postgresql123',#Remember the password you used during installation.
+        'HOST': '127.0.0.1', #Host server as the name says.
+        'PORT': '5432', #This was the port used during installation.
 
     }
 }
